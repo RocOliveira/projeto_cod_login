@@ -13,4 +13,19 @@ if(!loginEmail || !loginSenha){
 
 }
 
- 
+//Cria variavel do tipo array
+ var dadosLista=[];
+
+ function salvarUser(){
+    let nomeUser=document.getElementById("nomeUser").value;
+
+    if(nomeUser){
+        dadosLista.push(nomeUser);
+        console.log(dadosLista);
+        document.getElementById("nomeUser").value=""; 
+    } else {
+        alert ("FAvor informar um nome para cadastro!");
+    }
+
+    //Função para preencher a lista de cadastro
+ }
